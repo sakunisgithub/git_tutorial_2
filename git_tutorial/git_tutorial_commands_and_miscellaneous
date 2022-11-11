@@ -1,0 +1,12 @@
+git --version ::: To check the version of git
+git status
+git init ::: Initializes the current repository as git repository
+git add . ::: All the files goes to the staging area from the working directory
+git commit -m "version 1" ::: To commit files
+git log ::: To check all the versions and users
+git config --global user.name "<name>" ::: To configure username, create an account in github, then configure this with that username and email
+git config --global user.email "<email>" ::: To configure email ::: --gloabal activates that username all over the system
+there are 3 layers in git :: working, staging and commits
+origin is the website in internet, where the codes are stored
+uploading the codes in the website is called git push
+downloading the codes from the website is called git pull
