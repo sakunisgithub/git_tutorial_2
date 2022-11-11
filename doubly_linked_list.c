@@ -66,8 +66,6 @@ int main()
 	printf("Traversing and printing the doubly linked list ....\n\n");
 	print_doubly_linked_list(base_node);
  	
-	free(base_node);
-	free(second_node);
 	free(third_node);
 	free(fourth_node);
 	free(fifth_node);
