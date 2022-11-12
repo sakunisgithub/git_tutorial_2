@@ -10,3 +10,6 @@ there are 3 layers in git :: working, staging and commits
 origin is the website in internet, where the codes are stored
 uploading the codes in the website is called git push
 downloading the codes from the website is called git pull
+git remote ::: Lists all the remotes
+git remote -v ::: Lists all the remotes with verbose
+git config list ::: Lists all the configurations
