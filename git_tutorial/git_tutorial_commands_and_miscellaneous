@@ -13,3 +13,12 @@ downloading the codes from the website is called git pull
 git remote ::: Lists all the remotes
 git remote -v ::: Lists all the remotes with verbose
 git config list ::: Lists all the configurations
+git branch ::: shows all the branches
+branch is nothing but a copy of the repository...you make changes in the branch...if the changes are successful and accepted....merge the branch with master branch(master branch is the default branch)
+git branch copy_of_progrmas :::: creates a new branch named copy_of_progrmas
+git checkout copy_of_programs ::: moves to the branch named copy_of_progrmas
+when pushing the commits from a branch ::: git push -u origin copy_of_progrmas ::: pushes the changes of the branch copy_of_progrmas
+git merge copy_of_progrmas ::: to merge the branch copy_of_progrmas with the master branch
+merging is nothing but updating all the changes
+git branch -d copy_of_progrmas ::: deletes the branch named copy_of_progrmas from the local system but does not delete from the github remote i.e. the website
+git push origin --delete copy_of_progrmas ::: deletes the branch copy_of_progrmas from the website
