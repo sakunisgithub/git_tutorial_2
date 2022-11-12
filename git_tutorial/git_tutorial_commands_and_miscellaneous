@@ -22,3 +22,4 @@ git merge copy_of_progrmas ::: to merge the branch copy_of_progrmas with the mas
 merging is nothing but updating all the changes
 git branch -d copy_of_progrmas ::: deletes the branch named copy_of_progrmas from the local system but does not delete from the github remote i.e. the website
 git push origin --delete copy_of_progrmas ::: deletes the branch copy_of_progrmas from the website
+git push -f origin master ::: -f stands for forcefully, once I was getting error while pushing using -u, then I pushed using -f and succeeded. for more details git push --help, go to this manual page
