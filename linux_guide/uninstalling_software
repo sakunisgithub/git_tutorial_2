@@ -1,0 +1,2 @@
+sudo apt-get --purge remove code ::: This command will uninstall visual studio code
+sudo apt-get --purge remove gcc-11 ::: This command will uninstall gcc-11 i.e. 11 version of gcc

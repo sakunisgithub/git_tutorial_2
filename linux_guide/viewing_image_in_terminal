@@ -1,0 +1,12 @@
+I installed the fim image viewer for viewing images in the terminal
+sudo apt install fim
+to open any image using fim --> fim -a <image_name>
+to quit fim --> q or Esc key
+image navigation --> PageUp & PageDown or Enter
+zoom --> +/-
+autoscale --> a
+fitting width and height --> w/h
+flip --> f
+mirror --> m
+rotate(clockwise) --> r
+rotate(anti-clockwise) --> R

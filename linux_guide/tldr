@@ -1,0 +1,5 @@
+tldr is somewhat like a help page or a manual page
+which tldr -> to check whether tldr is installed
+if not installed, sudo apt-get install tldr
+
+after installing, write commands like tldr cd , tldr rm, tldr mkdir etc..

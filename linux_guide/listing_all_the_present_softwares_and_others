@@ -1,0 +1,1 @@
+dpkg --list ::: This command lists all the softwares and other things which I don't know as of now 

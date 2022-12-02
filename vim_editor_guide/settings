@@ -1,0 +1,19 @@
+COLORSCHEMES / THEMES
+
+There are a number of different colorschemes locally available.
+To see all the ready-to-use colorschemes, open any file with the vim editor and write :colorscheme [space] [Ctrl + d]
+To set the colorscheme write :colorscheme <name_of_the_colorscheme> and hit enter to see the changes
+for example, :colorscheme delek
+There is also a colorscheme named default
+To check the present colorscheme, write :colorscheme and hit enter
+
+Downloaded the molokai colorscheme using the three following commands
+mkdir ~/.vim/colors
+cd ~/.vim/colors
+curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
+Then permanently set the colorscheme molokai in the .vimrc file
+
+vim-plug is installed using
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

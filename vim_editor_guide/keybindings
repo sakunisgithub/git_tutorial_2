@@ -1,0 +1,54 @@
+the keybindings are followed by '-->'
+
+there are three modes :: normal mode, insert mode and visual line mode
+
+to start writing (to enter insert mode) --> i<enter>
+to enter visual line mode --> V
+to escape to normal mode (default mode) --> esc key
+
+to quit vim --> :q<enter> --> q 
+to quit vim and save changes --> :wq<enter>
+to quit vim and do not save changes --> :q!<enter>
+to move cursor to right --> l
+to move cursor to left --> h
+to move cursor to above line --> k
+to move cursor to below line --> j
+to add line below --> o
+to add line above --> O
+to go to beginning of present line (equivalent to home key) --> 0
+to go to end of present line (equivalent to end key) --> $
+to go one word ahead --> w
+to go one word ahead and don't stop at punctuations --> W
+to go one word backwards --> b
+to go one word backwards and don't stop at punctuations --> B
+to delete --> d
+to delete a word ahead --> dw
+to delete a word backwards --> db
+to delete 2 words ahead --> 2dw
+to delete 2 words backwards --> 2db
+to delete an entire line --> dd
+to delete 2 lines below including the present line --> 2dd
+to undo changes --> u
+to redo actions --> ctrl + r
+
+to navigate to any line of text, go to normal mode, write :10<enter> to take the cursor to line number 10
+
+to bring the current line at the middle of the screen --> z
+to go to any particular position in a line --> f? (takes the cursor to exactly at ? in the line, if there is any ? in the line)
+to go to the exact left of any particular position in a line --> t? (takes the cursor to the exact left of ? in the line, if there is any ? present)
+to delete upto any particular position in a line --> dt? (deletes everything upto ? in the line)
+
+to change anything --> c
+to change upto any particular position in a line --> ct? (deletes everything upto ? in the line and leaves in insert mode)
+
+to copy current line --> yy
+to paste the copied line --> p or Shift+p
+to delete the present character the cursor is at --> x
+to navigate to all the mentions of any particular word --> go to the first letter of the word and press * to navigate
+
+to go to the end of the line and enter insert mode --> A
+to go to the right of the cursor and enter insert mode --> a
+
+CHANGE THEMES/COLORSCHEMES
+There are a number of different vim colorschemes locally available.
+They are 1. 

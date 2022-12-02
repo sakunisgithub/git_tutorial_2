@@ -1,0 +1,8 @@
+which cmatrix -> to check whether cmatrix is installed or not
+if not installed, sudo apt-get install cmatrix
+
+tldr cmatrix -> to have some help
+
+cmatrix just gives a cool display in the terminal
+
+to quit the display, press q
