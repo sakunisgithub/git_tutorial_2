@@ -1,0 +1,9 @@
+vimtutor
+relative line number
+viw selects the current word
+vi( selects everything within the parenthesis
+di{ deletes everything within the {}
+ctrl + a increments the number by 1, place the cursor before the number
+g ctrl + a increments all the numbers accordingly, have 10 perpendicular 0s, create 10 multicursors by ctrl v 10 j, then g ctrl + a
+~ makes uppercase letter to lower case and lowercase letter to uppercase
+. redoes the last thing you did
