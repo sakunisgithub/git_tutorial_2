@@ -1,0 +1,5 @@
+tree command prints a tree like structure of all files and folders present in the current directory
+
+to execute this command you just have to write <tree> and then hit enter
+
+a manual page of tree command is also present in the folder of all the manual pages
