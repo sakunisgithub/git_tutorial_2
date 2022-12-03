@@ -3,6 +3,39 @@ imap jj <Esc>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+"Map Ctrl + w to F7 in insert mode and normal mode
+"Ctrl + w is heavily used in splitting nvim screens and navigating in between them
+imap <F7> <C-w>
+nmap <F7> <C-w>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 syntax on
 
 
@@ -585,9 +618,6 @@ Plug 'honza/vim-snippets'
 Plug 'ThePrimeagen/vim-be-good'
 
 
-"Plug 'lewis6991/gitsigns.nvim'
-
-
 Plug 'preservim/tagbar'
 
 
@@ -628,10 +658,10 @@ colorscheme jellybeans
 
 
 
-"Toggle tagbar by F1
+"Toggle tagbar by F2
 "hit Ctrl + w followed by l to set the cursor in the tagbar and navigate there by hjkl 
 "Hit enter to go to any function
-nnoremap <F1> :TagbarToggle<cr>
+nnoremap <F2> :TagbarToggle<cr>
 
 
 
