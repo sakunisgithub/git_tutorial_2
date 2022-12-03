@@ -68,6 +68,473 @@ set textwidth=0
 
 
 
+"don't hightlight after the search of one word is complete
+set nohlsearch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,21 +557,47 @@ set textwidth=0
 
 call plug#begin('~/.config/nvim/plugged')
 
+"colorschemes
 Plug 'gruvbox-community/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'mg979/vim-visual-multi'
-Plug 'ryanoasis/vim-devicons'
-Plug 'neoclide/coc.nvim'
 Plug 'rafi/awesome-vim-colorschemes'
+
+
+Plug 'tpope/vim-surround'
+
+
+Plug 'tpope/vim-commentary'
+
+
+Plug 'mg979/vim-visual-multi'
+
+
+Plug 'neoclide/coc.nvim'
+
+
 Plug 'jiangmiao/auto-pairs'
+
+
 Plug 'honza/vim-snippets'
+
+
 Plug 'ThePrimeagen/vim-be-good'
+
+
 "Plug 'lewis6991/gitsigns.nvim'
+
+
 Plug 'preservim/tagbar'
+
+
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons'
+
+
+
+
 
 call plug#end()
 
@@ -276,7 +769,7 @@ let g:coc_snippet_prev = '<s-tab>'
 
 
 
-"tab for navigation through suggestions and enter for completing the selected suggestion
+"tab for navigation through suggestions and enter for completing the selected suggestion ( copied from neoclide/coc.nvim github page )
 
 
 
@@ -309,3 +802,66 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"nerdtree-git-plugin (copied all the following form Xuyuanp/nerdtree-git-plugin github page)
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+
+
+let g:NERDTreeGitStatusShowClean = 1 " default: 0
+
+let g:NERDTreeGitStatusConcealBrackets = 1 " default: 0
