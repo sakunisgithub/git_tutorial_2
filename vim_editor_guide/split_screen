@@ -1,0 +1,11 @@
+Ctrl + w  v -> to split a screen vertically
+
+Ctrl + w  s -> to split a screen horizontally
+
+Ctrl + w  h/j/k/l -> to navigate through the screens
+
+Ctrl + w  >/< -> to adjust the width of the screens
+
+Ctrl + w  +/- -> to adjust the height of the screens
+
+Ctrl + w  = -> to equal the heights of the lower and upper splits

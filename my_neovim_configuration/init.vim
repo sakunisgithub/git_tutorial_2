@@ -1,21 +1,92 @@
 "Map Esc to jj in the insert mode
 imap jj <Esc>
 
+
+
+syntax on
+
+
+
+
+
+
+
+
+
+
+
+
+"the sets
+
+
+"to create vertical line cursor in all modes
 set guicursor=a:ver30
 " :h 'guicursor' for more details
 
+
+"line number
 set number
 set relativenumber
-set nowrap
+
+
+
+
+"indent
 set autoindent
 set smartindent
-set cursorline
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+
+
+"for better scrolling exprience
 set scrolloff=8
 
-syntax on
+
+"mouse compatibiliy in all modes
+"set mouse=a
+
+
+"vertical colorcolumn
+"set colorcolumn=100
+
+
+"coloumn at the left side of the screen
+set signcolumn=yes
+
+
+"set a line at which the cursor is present
+set cursorline
+
+
+
+"text wrapping
+set nowrap
+set textwidth=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"the plugins
+
+
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -32,26 +103,183 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'honza/vim-snippets'
 Plug 'ThePrimeagen/vim-be-good'
+"Plug 'lewis6991/gitsigns.nvim'
+Plug 'preservim/tagbar'
 
 call plug#end()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+"colorschemes must be after the plugings(in case they are imported from the plugins)
 colorscheme jellybeans 
 "colorscheme gruvbox
 
+
+
+
+
+
+
+
+
+
+
+"Toggle tagbar by F1
+"hit Ctrl + w followed by l to set the cursor in the tagbar and navigate there by hjkl 
+"Hit enter to go to any function
+nnoremap <F1> :TagbarToggle<cr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Toggle nerdtree
 inoremap <c-b> <Esc>:NERDTreeToggle<cr>
 nnoremap <c-b> <Esc>:NERDTreeToggle<cr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 "Tab for autocompletion
 "inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "goes to the function definition in the normal mode
 nnoremap <C-f> <Plug>(coc-definition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"snippets
+
+
 
 "jumps to the next snippet-placeholder in visual mode
 let g:coc_snippet_next = '<tab>'
 
 "jumps to the previous snippet-placeholder in visual mode
 let g:coc_snippet_prev = '<s-tab>'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"tab for navigation through suggestions and enter for completing the selected suggestion
+
+
+
 
 
 
@@ -65,6 +293,12 @@ inoremap <silent><expr> <TAB>
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+
+
+
+
+
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice.
