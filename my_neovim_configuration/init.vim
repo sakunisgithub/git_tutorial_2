@@ -250,7 +250,12 @@ Plug 'preservim/nerdtree' |
 
 
 
-
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+" or                                , { 'branch': '0.1.x' }
+"sudo apt-get install ripgrep ----- to use live_grep and grep_string
+":Telescope <tab> ------ to see all the possible options
 
 call plug#end()
 
@@ -562,3 +567,49 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 let g:NERDTreeGitStatusShowClean = 1 " default: 0
 
 let g:NERDTreeGitStatusConcealBrackets = 1 " default: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+" Find files using Telescope command-line sugar.
+nnoremap <F9> <cmd>Telescope find_files<cr>
+nnoremap <F10> <cmd>Telescope live_grep<cr>
+nnoremap <F11> <cmd>Telescope buffers<cr>
+nnoremap <F12> <cmd>Telescope help_tags<cr>
