@@ -12,7 +12,6 @@ imap jj <Esc>
 
 
 
-
 "Map Ctrl + w to F7 in insert mode and normal mode
 "Ctrl + w is heavily used in splitting nvim screens and navigating in between them
 imap <F7> <C-w>
@@ -256,6 +255,11 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " or                                , { 'branch': '0.1.x' }
 "sudo apt-get install ripgrep ----- to use live_grep and grep_string
 ":Telescope <tab> ------ to see all the possible options
+
+
+
+
+
 
 call plug#end()
 
