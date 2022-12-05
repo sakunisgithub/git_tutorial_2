@@ -1,0 +1,14 @@
+{
+	"Print to console": {
+	 	"prefix": "boi",
+	 	"body": [
+			"#include<iostream>\n",
+	 		"int main()",
+			"{",
+			"\t${0:/*code*/}",
+			"\treturn 0;",
+			"}"
+	 	]
+		
+	}
+}

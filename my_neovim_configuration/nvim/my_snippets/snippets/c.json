@@ -1,0 +1,101 @@
+{
+	"Print to console": {
+	 	"prefix": "boi",
+	 	"body": [
+	 		"#include<stdio.h>",
+			"#include<stdlib.h>\n",
+	 		"int main()",
+			"{",
+			"\t${0:/*code*/}",
+			"\treturn 0;",
+			"}"
+	 	]
+		
+	},
+
+	"Snippet 2": {
+		"prefix": "f1",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type});"]
+	},
+
+	"Snippet 3": {
+		"prefix": "f2",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type});"]
+	},
+
+	"Snippet 4": {
+		"prefix": "f3",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type}, ${5:argument_data_type});"]
+	},
+
+	"Snippet 5": {
+		"prefix": "fun1",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"Snippet 6": {
+		"prefix": "fun2",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"Snippet 7": {
+		"prefix": "fun3",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type}, ${5:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"malloc" : {
+		"prefix": "mlc",
+		"body": [ "${1:pointer_type} * ${2:pointer_name} = ($1 *) malloc(sizeof($1));" ]
+	},
+
+	"structure" : {
+		"prefix": "str",
+		"body": [
+			"struct ${1:structure_name}",
+			"{",
+			"\t${0:/*code*/}",
+			"};"
+		]
+	},
+
+	"else{}" : {
+		"prefix": "elsej",
+		"body": [
+			"else",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+		]
+	},
+
+	"print_integer" : {
+		"prefix": "prd",
+		"body": [ "printf(\"%d\", ${1:variable});" ]
+	},
+
+	"printf" : {
+		"prefix": "prf",
+		"body": [ "printf(\"${1:text}\"${2});" ]
+	},
+
+	"scanf_integer" : {
+		"prefix": "scd",
+		"body": [ "scanf(\"%d\", &${1:variable});" ]
+	}
+
+}
