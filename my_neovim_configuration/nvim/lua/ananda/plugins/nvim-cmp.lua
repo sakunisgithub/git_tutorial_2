@@ -17,7 +17,7 @@ if not lspkind_status then
 end
 
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
-require("luasnip/loaders/from_vscode").lazy_load()
+-- require("luasnip/loaders/from_vscode").lazy_load()
 require("luasnip.loaders.from_vscode").lazy_load({ paths = "~/.config/nvim/my_snippets" })
 
 vim.opt.completeopt = "menu,menuone,noselect"
@@ -75,5 +75,3 @@ cmp.setup({
 		}),
 	},
 })
-
-require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/luasnippets/package.json" } })

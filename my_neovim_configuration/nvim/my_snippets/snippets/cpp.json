@@ -1,8 +1,9 @@
 {
 	"Print to console": {
-	 	"prefix": "boi",
+	 	"prefix": "cpp_boilerplate_code",
 	 	"body": [
 			"#include<iostream>\n",
+            "using namespace std;\n",
 	 		"int main()",
 			"{",
 			"\t${0:/*code*/}",
