@@ -45,7 +45,7 @@ opt.hlsearch = false
 opt.scrolloff = 8
 
 -- set a vertical cursor at all modes
-opt.guicursor = "a:ver30"
+opt.guicursor = "a:block-nCursor"
 -- for more go to :h guicursor
 
 -- mouse compatible in all modes
