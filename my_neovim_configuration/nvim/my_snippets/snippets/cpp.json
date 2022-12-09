@@ -11,5 +11,152 @@
 			"}"
 	 	]
 		
-	}
+	},
+
+	"Snippet 2": {
+		"prefix": "f1",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type});"]
+	},
+
+	"Snippet 3": {
+		"prefix": "f2",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type});"]
+	},
+
+	"Snippet 4": {
+		"prefix": "f3",
+		"body": ["${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type}, ${5:argument_data_type});"]
+	},
+
+	"Snippet 5": {
+		"prefix": "fun1",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"Snippet 6": {
+		"prefix": "fun2",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"Snippet 7": {
+		"prefix": "fun3",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type}, ${5:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+    "cout": {
+        "prefix": "cout",
+        "body": [ "cout<<${1:/* text */}<<${2};"]
+    },
+    
+	"else" : {
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+		]
+	},
+
+    "do-while" : {
+        "prefix" : "do",
+        "body": [
+            "do",
+            "{",
+            "\t${0:/* code */}",
+            "}while(${1:/* condition */})"]
+    },
+
+    "while" : {
+        "prefix" : "while",
+        "body": [
+            "while($1:/* condition */)",
+            "{",
+            "\t${0:/* code */}",
+            "}"
+        ]
+    },
+
+    "for" : {
+        "prefix" : "for",
+        "body": [
+            "for(${1:int} ${2:i} = 0; $2 < ${3:count}; $2++)",
+            "{",
+            "\t/* code */",
+            "}"
+        ]
+    },
+
+    "return" : {
+        "prefix" : "ret",
+        "body": [ "return ${0};"]
+    },
+
+    "case" : {
+        "prefix" : "case",
+        "body": [
+            "case ${1:/* variable case */}:",
+            "${2: /* code */}",
+            "${3:break;}"
+        ]
+    },
+
+    "#include" : {
+        "prefix" : "#inc",
+        "body": [ "#include <${1}"]
+    },
+
+    "if" : {
+        "prefix" : "if",
+        "body": [
+            "if (${1:/* condition */})",
+            "{",
+            "\t${0:/* code */}",
+            "}"
+        ]
+    },
+
+    "else-if" : {
+        "prefix" : "elif",
+        "body": [
+            "else if (${1:/* condition */})",
+            "{",
+            "\t${0:/* code */}",
+            "}"
+        ]
+    },
+
+    "ternary if-else" : {
+        "prefix" : "ift",
+        "body": ["(${1:/* condition */}) ? (${2:/* if_true */}) : (${3:/* if_false */});"]
+    },
+
+    "switch-case" : {
+        "prefix" : "switch",
+        "body": [
+            "switch (${1:/* variable */})",
+            "{",
+            "\tcase (${2:/* value_of_variable */}) :",
+            "\t\t${3:/* code */}",
+            "\tdefault :",
+            "\t\t${4:/* code */}",
+            "}"
+        ]
+    }
+
 }
