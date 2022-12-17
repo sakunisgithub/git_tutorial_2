@@ -60,7 +60,7 @@
 
     "cout": {
         "prefix": "cout",
-        "body": [ "cout<<${1:/* text */}<<${2};"]
+        "body": [ "cout << ${1:/* text */} <<${2};"]
     },
     
 	"else" : {
@@ -85,7 +85,7 @@
     "while" : {
         "prefix" : "while",
         "body": [
-            "while($1:/* condition */)",
+            "while(${1:/* condition */})",
             "{",
             "\t${0:/* code */}",
             "}"
@@ -97,7 +97,7 @@
         "body": [
             "for(${1:int} ${2:i} = 0; $2 < ${3:count}; $2++)",
             "{",
-            "\t/* code */",
+            "\t${0:/* code */}",
             "}"
         ]
     },
@@ -157,6 +157,11 @@
             "\t\t${4:/* code */}",
             "}"
         ]
+    },
+
+    "standard-input" : {
+        "prefix" : "cin",
+        "body" : ["cin >> ${1:/*variable*/};"]
     }
 
 }

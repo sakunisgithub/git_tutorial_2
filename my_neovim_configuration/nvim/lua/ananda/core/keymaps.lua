@@ -9,8 +9,8 @@ keymap.set("i", "jj", "<Esc>") -- to go to normal mode form insert mode
 -- keymap.set("n", "x", "_x") -- do not copy the character that you deleted using x in normal mode (by default it is copied)
 
 -- increment/decrement numbers
--- keymap.set("n", "<leader>+", "<C-a>") -- increment number
--- keymap.set("n", "<leader>-", "<C-x>") -- decrement number
+keymap.set("n", "<leader>+", "<C-a>") -- increment number
+keymap.set("n", "<leader>-", "<C-x>") -- decrement number
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -24,6 +24,10 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 keymap.set("n", "<leader>w", "<C-w>") -- ctrl + w is necessary while navigating through the different windows
+
+-- scrolling block of code up and down with K and J in visual mode and with auto-indenting
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 ----------------------
 -- Plugin Keybinds
